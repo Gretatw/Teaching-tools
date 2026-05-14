@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>現代感網頁公告欄 | Modern Announcement Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <main class="container">
+        <header class="header">
+            <h1 id="main-title">佈告欄公告</h1>
+            <p id="sub-title">Important Announcements</p>
+        </header>
+
+        <section class="marquee-wrapper">
+            <div class="marquee-content" id="marquee">
+                <span class="marquee-text">今日重點：AI 協作實務、Python 環境安裝、檔案自動化處理</span>
+                <span class="marquee-text">今日重點：AI 協作實務、Python 環境安裝、檔案自動化處理</span>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p id="date-display"></p>
+        </footer>
+    </main>
+
+    <!-- Settings Panel -->
+    <button id="settings-toggle" class="settings-btn" title="設定">⚙️</button>
+    <div id="settings-panel" class="settings-panel">
+        <h3>更新公告內容</h3>
+        <input type="text" id="announcement-input" placeholder="輸入新的公告內容..." value="今日重點：AI 協作實務、Python 環境安裝、檔案自動化處理">
+        <div class="panel-actions">
+            <button id="update-btn" class="primary-btn">確認更新</button>
+            <button id="reset-btn" class="secondary-btn">重設預設值</button>
+        </div>
+    </div>
+
+    <nav class="nav-buttons">
+        <a href="../daily-quotes/index.html" class="nav-btn prev">上一頁</a>
+        <a href="../mood-checkin/index.html" class="nav-btn next">下一頁</a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
