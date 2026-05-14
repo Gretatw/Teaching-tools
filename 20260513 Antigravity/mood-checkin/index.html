@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日心情簽到 | Daily Mood Check-in</title>
+    <meta name="description" content="記錄今日心情，獲取專屬鼓勵與簽到成功訊息。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="main-title">今天的心情如何？</h1>
+            <p class="subtitle">How are you feeling today?</p>
+        </header>
+
+        <div class="mood-selector">
+            <button class="mood-btn" id="happy-btn" data-mood="happy" aria-label="開心">
+                <span class="emoji">😊</span>
+            </button>
+            <button class="mood-btn" id="neutral-btn" data-mood="neutral" aria-label="普通">
+                <span class="emoji">😐</span>
+            </button>
+            <button class="mood-btn" id="sad-btn" data-mood="sad" aria-label="難過">
+                <span class="emoji">😢</span>
+            </button>
+        </div>
+
+        <div id="checkin-card" class="card hidden">
+            <div class="card-content">
+                <div class="checkin-status">
+                    <span class="check-icon">✓</span>
+                    <span id="status-text">今日簽到成功</span>
+                </div>
+                <p id="encouragement-msg"></p>
+                <button id="close-btn">關閉</button>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-buttons">
+        <a href="../announcement-board/index.html" class="nav-btn prev">上一頁</a>
+        <a href="../noise-monitor/index.html" class="nav-btn next">下一頁</a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
