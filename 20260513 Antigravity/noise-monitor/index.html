@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教室音量監測器 - 保持良好討論環境</title>
+    <meta name="description" content="一個專為教室設計的音量監測工具，透過綠、黃、紅三色燈號協助學生掌握討論音量。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>音量引導燈</h1>
+            <p class="subtitle">營造最舒適的學習氛圍</p>
+        </header>
+
+        <main>
+            <div id="status-light" class="light state-green">
+                <div class="light-inner">
+                    <span id="status-text">請保持討論</span>
+                </div>
+                <div class="glow-effect"></div>
+            </div>
+        </main>
+
+        <nav class="controls">
+            <button id="btn-green" class="control-btn" onclick="updateState('green')">
+                <span class="dot green"></span>討論中
+            </button>
+            <button id="btn-yellow" class="control-btn" onclick="updateState('yellow')">
+                <span class="dot yellow"></span>注意音量
+            </button>
+            <button id="btn-red" class="control-btn" onclick="updateState('red')">
+                <span class="dot red"></span>請安靜
+            </button>
+        </nav>
+    </div>
+    <nav class="nav-buttons">
+        <a href="../mood-checkin/index.html" class="nav-btn prev">上一頁</a>
+        <a href="../student-grouper/index.html" class="nav-btn next">下一頁</a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
