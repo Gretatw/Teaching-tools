@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧分組工具 | AI Student Grouper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>智慧分組工具</h1>
+            <p style="color: var(--text-muted)">快速、公平且充滿驚喜的分組體驗</p>
+        </header>
+
+        <section class="config-panel">
+            <div class="input-group">
+                <label for="student-list">學生名單 (請輸入姓名，以空格或換行分隔)</label>
+                <textarea id="student-list" placeholder="例如：
+王小明
+李小華
+張三..."></textarea>
+            </div>
+
+            <div class="controls">
+                <div class="input-group">
+                    <label for="group-count">分組數量</label>
+                    <input type="number" id="group-count" min="2" value="4">
+                </div>
+                <button id="generate-btn">開始分組 Reveal Groups</button>
+            </div>
+        </section>
+
+        <div id="results-grid">
+            <!-- Cards will be generated here -->
+        </div>
+    </div>
+
+    <nav class="nav-buttons">
+        <a href="../teaching-dashboard/index.html" class="nav-btn home">回首頁</a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
