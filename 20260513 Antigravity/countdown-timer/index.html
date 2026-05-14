@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全螢幕倒數計時器</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="setup-screen" class="screen active">
+        <div class="content">
+            <h1>倒數計時設定</h1>
+            <div class="input-group">
+                <input type="number" id="minutes-input" min="1" max="999" value="10">
+                <span>分鐘</span>
+            </div>
+            <button id="start-btn">開始計時</button>
+        </div>
+    </div>
+
+    <div id="timer-screen" class="screen">
+        <div id="timer-display">00:00</div>
+    </div>
+
+    <div id="alert-screen" class="screen">
+        <div class="alert-content">
+            <div class="alert-text">時間到，請看黑板</div>
+            <div class="hint">點擊螢幕返回</div>
+        </div>
+    </div>
+
+    <nav class="nav-buttons">
+        <a href="../teaching-dashboard/index.html" class="nav-btn prev">上一頁 (首頁)</a>
+        <a href="../daily-quotes/index.html" class="nav-btn next">下一頁</a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
