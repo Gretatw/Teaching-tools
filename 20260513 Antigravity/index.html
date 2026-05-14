@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教學小工具儀表板</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="dashboard-container">
+        <header class="header">
+            <div class="profile">
+                <div class="avatar">
+                    <i data-lucide="graduation-cap"></i>
+                </div>
+                <h1 id="user-name">許淑茹 老師</h1>
+            </div>
+            <p class="subtitle">教學小工具儀表板</p>
+        </header>
+
+        <section class="tools-grid">
+            <a href="countdown-timer/index.html" class="tool-card" id="btn-countdown">
+                <div class="icon-wrapper color-1">
+                    <i data-lucide="timer"></i>
+                </div>
+                <div class="tool-info">
+                    <h3>倒數計時</h3>
+                    <p>掌握課堂節奏</p>
+                </div>
+            </a>
+
+            <a href="daily-quotes/index.html" class="tool-card" id="btn-quotes">
+                <div class="icon-wrapper color-2">
+                    <i data-lucide="quote"></i>
+                </div>
+                <div class="tool-info">
+                    <h3>每日金句</h3>
+                    <p>激發學習靈感</p>
+                </div>
+            </a>
+
+            <a href="announcement-board/index.html" class="tool-card" id="btn-announcement">
+                <div class="icon-wrapper color-3">
+                    <i data-lucide="megaphone"></i>
+                </div>
+                <div class="tool-info">
+                    <h3>課程公告</h3>
+                    <p>重點資訊傳達</p>
+                </div>
+            </a>
+
+            <a href="mood-checkin/index.html" class="tool-card" id="btn-mood">
+                <div class="icon-wrapper color-4">
+                    <i data-lucide="smile"></i>
+                </div>
+                <div class="tool-info">
+                    <h3>心情打卡</h3>
+                    <p>關懷學生情緒</p>
+                </div>
+            </a>
+
+            <a href="noise-monitor/index.html" class="tool-card" id="btn-noise">
+                <div class="icon-wrapper color-5">
+                    <i data-lucide="mic"></i>
+                </div>
+                <div class="tool-info">
+                    <h3>噪音監測</h3>
+                    <p>維持課堂秩序</p>
+                </div>
+            </a>
+
+            <a href="student-grouper/index.html" class="tool-card" id="btn-grouper">
+                <div class="icon-wrapper color-6">
+                    <i data-lucide="users"></i>
+                </div>
+                <div class="tool-info">
+                    <h3>學生分組</h3>
+                    <p>公平創意分組</p>
+                </div>
+            </a>
+        </section>
+
+        <footer class="footer">
+            <p id="current-date">載入日期中...</p>
+            <p class="copyright">Copyright © 2026 許淑茹 老師. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
